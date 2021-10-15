@@ -1,0 +1,17 @@
+﻿.container{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media (min-width: 1066px) {
+    .container{
+        padding-left: unset calc((100% - 960px) / 2);
+        padding-right: unset calc((100% - 960px) / 2);
+    }
+}
+@media (min-width: 1440px) {
+    .container{
+        padding-left: calc((100% - 1220px) / 2);
+        padding-right: calc((100% - 1220px) / 2);
+    }
+}

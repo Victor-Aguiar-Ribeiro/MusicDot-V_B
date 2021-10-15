@@ -1,0 +1,109 @@
+﻿.rodape {
+    /* line-height: 1.5em; */
+    font-size: 0.7rem;
+    text-align: center;
+
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.rodape__logo{
+    width: 10em;
+    margin-bottom: 1em;
+}
+.rodape__info-empresa{
+    line-height: 1.5;
+}
+.rodape__midias-sociais-lista{
+    list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+.rodape__midias-sociais-lista img{
+    width: 100%;
+}
+.rodape__midias-sociais-icon{
+    margin: 0 .25em;
+    width: 2.62em;
+}
+.rodape__titulo{
+    font-weight: bold;
+    font-size: 1.45em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+.rodape__lista {
+    padding-left: 0px;
+    list-style-type: none;
+}
+.rodape__lista-item{
+    font-weight: 500;
+    margin: 0.625em 0;
+    
+
+}
+.rodape__lista-item a{
+    color: inherit;
+}
+
+@media (max-width: 640px) {
+    .rodape__section + .rodape__section{
+        margin-top: 2em;
+    }
+}
+@media (min-width: 640px) and (max-width: 1200px) {
+    .rodape{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        font-size: 1rem;
+    }
+    .rodape__section--sobre,
+    .rodape__section--links,
+    .rodape__section--form-newsletter,
+    .rodape__section--cursos {
+        width: 43.5%;
+    }
+    .rodape__section--cursos{
+        order: 1;
+        margin: 0;
+    }
+    .rodape__section--links{
+        order: 2;
+        margin: 0;
+    }
+    .rodape__section--sobre{
+        order: 3;
+        margin-top: 2em;
+    }
+    .rodape__section--form-newsletter{
+        order: 4;
+        margin-top: 2em;
+    }
+}
+@media (min-width: 1200px) {
+    .rodape{
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.85rem;
+        text-align: left;
+    }
+    .rodape__info-empresa{
+        line-height: 1.3em;
+    }
+    .rodape__titulo{
+        font-size: 1em;
+    }
+    .rodape__section{
+        margin-top: 0;
+    }
+    .rodape__section + .rodape__section{
+        margin-left: 2em;
+    }
+    .rodape__midias-sociais-lista{
+        justify-content: left;
+    }
+}
